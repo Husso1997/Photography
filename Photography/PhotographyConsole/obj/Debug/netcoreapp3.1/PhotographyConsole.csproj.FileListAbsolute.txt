@@ -1,0 +1,4 @@
+C:\Users\Hussain\source\repos\Photography\PhotographyConsole\bin\Debug\netcoreapp3.1\PhotographyConsole.exe
+C:\Users\Hussain\source\repos\Photography\PhotographyConsole\obj\Debug\netcoreapp3.1\PhotographyConsole.csprojAssemblyReference.cache
+C:\Users\Hussain\source\repos\Photography\PhotographyConsole\obj\Debug\netcoreapp3.1\PhotographyConsole.AssemblyInfoInputs.cache
+C:\Users\Hussain\source\repos\Photography\PhotographyConsole\obj\Debug\netcoreapp3.1\PhotographyConsole.AssemblyInfo.cs
