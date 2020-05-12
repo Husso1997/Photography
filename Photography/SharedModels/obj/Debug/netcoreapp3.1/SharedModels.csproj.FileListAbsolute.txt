@@ -1,0 +1,9 @@
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\bin\Debug\netcoreapp3.1\SharedModels.deps.json
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\bin\Debug\netcoreapp3.1\SharedModels.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\bin\Debug\netcoreapp3.1\SharedModels.pdb
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.csprojAssemblyReference.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.csproj.CoreCompileInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.AssemblyInfoInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.AssemblyInfo.cs
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\SharedModels\obj\Debug\netcoreapp3.1\SharedModels.pdb

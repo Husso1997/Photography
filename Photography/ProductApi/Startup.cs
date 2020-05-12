@@ -21,17 +21,29 @@ namespace ProductApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IRepository<Product>, ProductRepository>();
-            services.AddTransient<IConverter, Converter>();
+            services.AddScoped<IRepository<Product>, ProductRepository>();
+            services.AddScoped<IConverter, Converter>();
+            services.AddTransient<IDbSeeding, DbSeeding>();
 
             // In-memory database for the products:
             services.AddDbContext<ProductApiContext>(opt => opt.UseInMemoryDatabase("ProductsDatabase"));
+
+            services.AddControllers();
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // seed the database
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetService<ProductApiContext>();
+                var dbSeeder = services.GetService<IDbSeeding>();
+                dbSeeder.SeedWithData(context);
+            }
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -25,15 +25,17 @@ namespace ProductApi.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public async Task<List<Product>> Get()
+        public async Task<IActionResult> Get()
         {
             try
             {
-                return await _productRepo.GetAll();
+                var products = await _productRepo.GetAll();
+                List<ProductDTO> productsDTO = _converter.Convert<List<ProductDTO>>(products);
+                return new OkObjectResult(productsDTO);
             }
             catch (Exception)
             {
-                throw;
+                return StatusCode(500, "Error, try again");
             }
         }
 
@@ -52,7 +54,7 @@ namespace ProductApi.Controllers
             }
             catch (Exception)
             {
-                throw;
+                return StatusCode(500, "Error, try again");
             }
         }
 
@@ -73,7 +75,7 @@ namespace ProductApi.Controllers
             }
             catch (Exception)
             {
-                throw;
+                return StatusCode(500, "Error, try again");
             }
         }
 
@@ -89,13 +91,13 @@ namespace ProductApi.Controllers
                 }
 
                 Product productToUpdate = _converter.Convert<Product>(productDTO);
-                var productUpdated = await _productRepo.Create(productToUpdate);
+                var productUpdated = await _productRepo.Update(productToUpdate);
 
                 return new OkObjectResult(_converter.Convert<ProductDTO>(productUpdated));
             }
             catch (Exception)
             {
-                throw;
+                return StatusCode(500, "Error, try again");
             }
         }
 
@@ -116,7 +118,7 @@ namespace ProductApi.Controllers
             }
             catch (Exception)
             {
-                throw;
+                return StatusCode(500, "Error, try again");
             }
         }
     }

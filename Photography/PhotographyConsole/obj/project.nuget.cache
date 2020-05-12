@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3VnTwNrMjguK/21jPXiwYiE2SBcMpYNcPu01H8iTfTcBLU/D7FOgN1V2VUDFM0LhU3EwhM+BCxSrl7uZSowtSw==",
+  "dgSpecHash": "KJNS17ojcLXFSOmxDS3WeWR9IO4vPBlUihYbY6sncrFntwHOLtoDfRCTRQ+FeTRwbigInAhdm4lO74W7lUNzqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hussain\\source\\repos\\Photography\\PhotographyConsole\\PhotographyConsole.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\PhotographyConsole\\PhotographyConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.3\\microsoft.extensions.dependencyinjection.3.1.3.nupkg.sha512",
+    "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Hussain\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Hussain\\.nuget\\packages\\restsharp\\106.11.2\\restsharp.106.11.2.nupkg.sha512"
+  ],
   "logs": []
 }

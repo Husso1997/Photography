@@ -12,6 +12,7 @@ namespace ProductApi.Data
         public ProductApiContext(DbContextOptions<ProductApiContext> options)
             : base(options)
         {
+            base.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         /// <summary>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aq5wY+WE9KaYV4PDqHQ5+UueHNf55zn8YyssAXx4MArZ1VuSTEMGAPfBGuOGoDgUJMtI13iNlQvOeu/QfkOneQ==",
+  "dgSpecHash": "vtB5hvbscetFqJAg0ld9zgj0N+JAF4boy7dbjg6rbk8jcKU4WA3r3BrHaGWnC5mY7RNER4wj9qSGCglM4quUPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\ProductApi.csproj",
+  "projectFilePath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\ProductApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

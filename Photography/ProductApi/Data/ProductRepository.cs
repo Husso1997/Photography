@@ -28,6 +28,7 @@ namespace ProductApi.Data
             try
             {
                 var entityEntry = await _ctx.Products.AddAsync(obj).ConfigureAwait(false);
+                await _ctx.SaveChangesAsync().ConfigureAwait(false);
                 return entityEntry.Entity;
             }
             catch (Exception ex)

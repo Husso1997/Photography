@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infrastructure\" />
+    <ProjectReference Include="..\SharedModels\SharedModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SharedModels\SharedModels.csproj" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
 
 </Project>

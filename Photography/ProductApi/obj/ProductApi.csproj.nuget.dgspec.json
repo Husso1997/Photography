@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\ProductApi.csproj": {}
+    "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\ProductApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\ProductApi.csproj": {
+    "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\ProductApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\ProductApi.csproj",
+        "projectUniqueName": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\ProductApi.csproj",
         "projectName": "ProductApi",
-        "projectPath": "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\ProductApi.csproj",
+        "projectPath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\ProductApi.csproj",
         "packagesPath": "C:\\Users\\Hussain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hussain\\source\\repos\\Photography\\ProductApi\\obj\\",
+        "outputPath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\ProductApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\SharedModels.csproj": {
-                "projectPath": "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\SharedModels.csproj"
+              "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\SharedModels.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\SharedModels.csproj": {
+    "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\SharedModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\SharedModels.csproj",
+        "projectUniqueName": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\SharedModels.csproj",
         "projectName": "SharedModels",
-        "projectPath": "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\SharedModels.csproj",
+        "projectPath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\SharedModels.csproj",
         "packagesPath": "C:\\Users\\Hussain\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hussain\\source\\repos\\Photography\\SharedModels\\obj\\",
+        "outputPath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\SharedModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
