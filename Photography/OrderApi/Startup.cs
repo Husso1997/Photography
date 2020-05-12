@@ -6,6 +6,10 @@ using Microsoft.Extensions.Hosting;
 using OrderApi.Data;
 using OrderApi.Infrastructure;
 using OrderApi.Models;
+using PhotographyConsole.Infrastructure;
+using SharedModels;
+using System;
+using System.Threading.Tasks;
 
 namespace OrderApi
 {
@@ -14,17 +18,29 @@ namespace OrderApi
         /// <summary>
         /// Connection string for message broker - for DPI
         /// </summary>
-        private readonly string cloudAMQPConnectionString = "host=roedeer.rmq.cloudamqp.com;virtualHost=baeynauo;username=baeynauo;password=7mYHJ1effqAkcc1HFZGC4wYZK6F_Iflf"
-        
+        private readonly string cloudAMQPConnectionString = "host=roedeer.rmq.cloudamqp.com;virtualHost=baeynauo;username=baeynauo;password=7mYHJ1effqAkcc1HFZGC4wYZK6F_Iflf";
+
+        private readonly Uri _productSeviceGateway = new Uri("https://localhost:44397/api/products");
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            // Repository 
             services.AddScoped<IRepository<Order>, OrderRepository>();
+            
+            // Converter
             services.AddScoped<IConverter, Converter>();
+            
+            // DB seed 
             services.AddTransient<IDbSeeding, DbSeeding>();
 
-            services.AddSingleton<IMessagePublisher>(new MessagePublisher(cloudAMQPConnectionString))
+            // Singleton - MessagePublisher
+            services.AddSingleton<IMessagePublisher>(new MessagePublisher(cloudAMQPConnectionString));
+            
+            // Singleton -ServiceGateWay For Product API
+            services.AddSingleton<IServiceGateway<ProductDTO>>(new ProductServiceGateway(_productSeviceGateway));
+
 
             // In-memory database for the products:
             services.AddDbContext<OrderApiContext>(opt => opt.UseInMemoryDatabase("OrdersDatabase"));
@@ -35,6 +51,9 @@ namespace OrderApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Starting the Subscription for the listener in an other thread.
+            Task.Factory.StartNew(() => new MessageListener(app.ApplicationServices, cloudAMQPConnectionString).StartSubscription());
+
             // seed the database
             using (var scope = app.ApplicationServices.CreateScope())
             {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KjgQ3KA7Gd3RhAExXKbFmS6mViUCU2Q0xL7RkylDZE+5FVfFEifSXZbkUbTRrx/VMFafJRdPBumFW+0LSdnGNg==",
+  "dgSpecHash": "AtOvrezFcHj+0YR+huFjOHAQd+xretVbAqd1N/HsWIXixH1gMHgPnaLK55uNXx8Z4BqrHjylEtVzrWD2cicQVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\OrderApi\\OrderApi.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\Hussain\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hussain\\.nuget\\packages\\restsharp\\106.11.2\\restsharp.106.11.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -6,8 +6,6 @@ namespace SharedModels.Messaging
 {
     public class OrderCreatedMessage
     {
-        public int OrderID { get; set; }
-        public int CustomerID { get; set; }
-
+        public OrderDTO OrderDTO { get; set; }
     }
 }

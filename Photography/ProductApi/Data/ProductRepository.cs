@@ -4,6 +4,7 @@ using ProductApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace ProductApi.Data
@@ -66,6 +67,19 @@ namespace ProductApi.Data
             }
         }
 
+        public async Task<List<Product>> GetAllWhere(Expression<Func<Product, bool>> predicate)
+        {
+            try
+            {
+                return await _ctx.Products.Where(predicate).ToListAsync().ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Failed retrieving products", ex);
+                throw;
+            }
+        }
+
         public async Task<Product> GetById(int id)
         {
             try
@@ -86,6 +100,21 @@ namespace ProductApi.Data
                 var updatedProduct = _ctx.Update(product).Entity;
                 await _ctx.SaveChangesAsync().ConfigureAwait(false);
                 return updatedProduct;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Failed updating product", ex);
+                throw;
+            }
+        }
+
+        public async Task<List<Product>> UpdateRange(List<Product> products)
+        {
+            try
+            {
+                _ctx.UpdateRange(products);
+                await _ctx.SaveChangesAsync().ConfigureAwait(false);
+                return products;
             }
             catch (Exception ex)
             {

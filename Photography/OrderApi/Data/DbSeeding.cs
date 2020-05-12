@@ -18,16 +18,16 @@ namespace OrderApi.Data
 
             new Order()
                 {
-                    CustomerID = 1,
-                    OrderProgress = OrderProgress.Accepted,
+                    CustomerID = 0,
+                    OrderProgress = OrderProgress.Cancelled,
                     Products = new List<OrderProduct>(){new OrderProduct { ProductID = 1} }
 
                 },
 
             new Order()
                 {
-                    CustomerID = 2,
-                    OrderProgress = OrderProgress.Accepted,
+                    CustomerID = 0,
+                    OrderProgress = OrderProgress.Cancelled,
                     Products = new List<OrderProduct>(){new OrderProduct { ProductID = 2} }
                 }
         };

@@ -209,8 +209,6 @@ C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\bin\Debug\n
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\bin\Debug\netcoreapp3.1\SharedModels.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\bin\Debug\netcoreapp3.1\SharedModels.pdb
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.csprojAssemblyReference.cache
-C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.csproj.CoreCompileInputs.cache
-C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.AssemblyInfoInputs.cache
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.AssemblyInfo.cs
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.RazorTargetAssemblyInfo.cache
@@ -220,3 +218,7 @@ C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\n
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.pdb
 C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.genruntimeconfig.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.csproj.CoreCompileInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\obj\Debug\netcoreapp3.1\ProductApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\bin\Debug\netcoreapp3.1\EasyNetQ.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll

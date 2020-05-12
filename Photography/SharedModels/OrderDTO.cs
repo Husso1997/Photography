@@ -19,5 +19,5 @@ namespace SharedModels
         public int ProductID { get; set; }
     }
 
-    public enum OrderProgress { Created, Completed }
+    public enum OrderProgress { Verifiying, Cancelled, Accepted, Completed }
 }

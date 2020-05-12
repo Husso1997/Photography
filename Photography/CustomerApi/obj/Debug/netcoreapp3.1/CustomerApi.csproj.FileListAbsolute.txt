@@ -105,8 +105,10 @@ C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.csproj.CoreCompileInputs.cache
-C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.pdb
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.genruntimeconfig.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\EasyNetQ.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.csproj.CoreCompileInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.MvcApplicationPartsAssemblyInfo.cache

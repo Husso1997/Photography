@@ -20,9 +20,9 @@ namespace PhotographyConsole
         static async Task Main(string[] args)
         {
             string option;
+            MessageWithOptions();
             while ((option = Console.ReadLine().ToLower()) != "quit")
             {
-                MessageWithOptions();
                 await OptionSelector(option);
             }
         }
@@ -49,12 +49,13 @@ namespace PhotographyConsole
             {
                 Console.WriteLine("Please type a numeric value");
             }
+            MessageWithOptions();
         }
 
         private static async Task GetProducts()
         {
             _products = await _productServiceGateway.GetAll();
-            _products.ForEach(x => Console.WriteLine($"ID: {x.ID} Name: {x.Name} Price: {x.Price}"));
+            _products.ForEach(x => Console.WriteLine($"ID: {x.ID} Name: {x.Name} Price: {x.Price} Bought Amount Of Times: {x.AmountOfTimesBought}"));
         }
 
         private static async Task GetOrders()

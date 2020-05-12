@@ -108,3 +108,8 @@ C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\net
 C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\SharedModels.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\SharedModels.pdb
+C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\EasyNetQ.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\obj\Debug\netcoreapp3.1\OrderApi.csproj.CoreCompileInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi\obj\Debug\netcoreapp3.1\OrderApi.MvcApplicationPartsAssemblyInfo.cache
