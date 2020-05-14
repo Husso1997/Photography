@@ -110,5 +110,10 @@ C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.genruntimeconfig.cache
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\EasyNetQ.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.csproj.CoreCompileInputs.cache
+C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi\obj\Debug\netcoreapp3.1\CustomerApi.MvcApplicationPartsAssemblyInfo.cache

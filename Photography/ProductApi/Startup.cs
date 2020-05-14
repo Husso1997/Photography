@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using ProductApi.Data;
 using ProductApi.Infrastructure;
@@ -35,6 +36,22 @@ namespace ProductApi
             // In-memory database for the products:
             services.AddDbContext<ProductApiContext>(opt => opt.UseInMemoryDatabase("ProductsDatabase"));
 
+            // Registering the Swagger generator
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Product API",
+                    Version = "v1",
+                    Contact = new OpenApiContact()
+                    {
+                        Email = "Huss0247@easv365.dk",
+                        Name = "Hussain Taha",
+                        Url = new Uri("https://github.com/Husso1997"),
+                    }
+                });
+            });
+
             services.AddControllers();
 
         }
@@ -42,6 +59,16 @@ namespace ProductApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product API V1");
+            });
+
             // Starting the Subscription for the listener in an other thread.
             Task.Factory.StartNew(() => new MessageListener(app.ApplicationServices, cloudAMQPConnectionString).StartSubscription());
 

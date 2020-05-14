@@ -1,0 +1,43 @@
+services:
+  customerapi:
+    build:
+      context: C:\Users\Hussain\Documents\Github\Photography\Photography
+      dockerfile: CustomerApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+    image: customerapi
+    ports:
+    - target: 80
+    volumes:
+    - C:\Users\Hussain\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Hussain\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  orderapi:
+    build:
+      context: C:\Users\Hussain\Documents\Github\Photography\Photography
+      dockerfile: OrderApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+    image: orderapi
+    ports:
+    - published: 7000
+      target: 80
+    - target: 80
+    volumes:
+    - C:\Users\Hussain\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+  productapi:
+    build:
+      context: C:\Users\Hussain\Documents\Github\Photography\Photography
+      dockerfile: ProductApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+    image: productapi
+    ports:
+    - published: 7001
+      target: 80
+    - target: 80
+    volumes:
+    - C:\Users\Hussain\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'

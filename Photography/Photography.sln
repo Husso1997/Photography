@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi", "ProductApi\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModels", "SharedModels\SharedModels.csproj", "{DFC7C0FA-E3AD-460A-871A-9A2BF56445F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerApi", "CustomerApi\CustomerApi.csproj", "{F32C7443-7B54-4264-96E0-68157ABB6664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerApi", "CustomerApi\CustomerApi.csproj", "{F32C7443-7B54-4264-96E0-68157ABB6664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi", "OrderApi\OrderApi.csproj", "{FCED46BA-F77D-4E73-A48F-26B197EF10FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi", "OrderApi\OrderApi.csproj", "{FCED46BA-F77D-4E73-A48F-26B197EF10FC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9ACCF9FD-6641-4EDA-A795-5836DBC91E46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FCED46BA-F77D-4E73-A48F-26B197EF10FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCED46BA-F77D-4E73-A48F-26B197EF10FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCED46BA-F77D-4E73-A48F-26B197EF10FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACCF9FD-6641-4EDA-A795-5836DBC91E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACCF9FD-6641-4EDA-A795-5836DBC91E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACCF9FD-6641-4EDA-A795-5836DBC91E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACCF9FD-6641-4EDA-A795-5836DBC91E46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,6 +10,7 @@ using PhotographyConsole.Infrastructure;
 using SharedModels;
 using System;
 using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
 
 namespace OrderApi
 {
@@ -20,7 +21,8 @@ namespace OrderApi
         /// </summary>
         private readonly string cloudAMQPConnectionString = "host=roedeer.rmq.cloudamqp.com;virtualHost=baeynauo;username=baeynauo;password=7mYHJ1effqAkcc1HFZGC4wYZK6F_Iflf";
 
-        private readonly Uri _productSeviceGateway = new Uri("https://localhost:44397/api/products");
+        // This is the url when using docker-compose, only works within the containered applications
+        private readonly Uri _productSeviceGateway = new Uri("http://productapi/api/products");
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -45,12 +47,39 @@ namespace OrderApi
             // In-memory database for the products:
             services.AddDbContext<OrderApiContext>(opt => opt.UseInMemoryDatabase("OrdersDatabase"));
 
+            // Registering the Swagger generator
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                { 
+                    Title = "Order API",
+                    Version = "v1",
+                    Contact = new OpenApiContact()
+                    {
+                        Email = "Huss0247@easv365.dk",
+                        Name = "Hussain Taha",
+                        Url = new Uri("https://github.com/Husso1997"),
+                    },
+                    
+                });
+            });
+
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Order API V1");
+            });
+
             // Starting the Subscription for the listener in an other thread.
             Task.Factory.StartNew(() => new MessageListener(app.ApplicationServices, cloudAMQPConnectionString).StartSubscription());
 

@@ -10,10 +10,10 @@ namespace PhotographyConsole
     class Program
     {
         private static readonly ProductServiceGateway _productServiceGateway
-        = new ProductServiceGateway(new Uri("https://localhost:44397/api/products"));
+        = new ProductServiceGateway(new Uri("http://localhost:7001/api/products"));
 
         private static readonly OrderServiceGateway _orderServiceGateway
-        = new OrderServiceGateway(new Uri("https://localhost:44362/api/orders"));
+        = new OrderServiceGateway(new Uri("http://localhost:7000/api/orders"));
 
         private static List<OrderDTO> _orders;
         private static List<ProductDTO> _products;

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PhotographyConsole": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

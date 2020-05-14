@@ -1,0 +1,85 @@
+version: '3.4'
+
+services:
+  customerapi:
+    image: customerapi:dev
+    container_name: CustomerApi
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "CustomerApi"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_customerapi$
+    volumes:
+      - C:\Users\Hussain\Documents\Github\Photography\Photography\CustomerApi:/app
+      - C:\Users\Hussain\Documents\Github\Photography\Photography:/src
+      - C:\Users\Hussain\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_customerapi$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_customerapi$ \"/app/bin/Debug/netcoreapp3.1/CustomerApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  orderapi:
+    image: orderapi:dev
+    container_name: OrderApi
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "OrderApi"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_orderapi$
+    volumes:
+      - C:\Users\Hussain\Documents\Github\Photography\Photography\OrderApi:/app
+      - C:\Users\Hussain\Documents\Github\Photography\Photography:/src
+      - C:\Users\Hussain\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_orderapi$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_orderapi$ \"/app/bin/Debug/netcoreapp3.1/OrderApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  productapi:
+    image: productapi:dev
+    container_name: ProductApi
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ProductApi"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_productapi$
+    volumes:
+      - C:\Users\Hussain\Documents\Github\Photography\Photography\ProductApi:/app
+      - C:\Users\Hussain\Documents\Github\Photography\Photography:/src
+      - C:\Users\Hussain\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_productapi$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_productapi$ \"/app/bin/Debug/netcoreapp3.1/ProductApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

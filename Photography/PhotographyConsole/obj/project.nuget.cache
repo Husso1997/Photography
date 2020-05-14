@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KJNS17ojcLXFSOmxDS3WeWR9IO4vPBlUihYbY6sncrFntwHOLtoDfRCTRQ+FeTRwbigInAhdm4lO74W7lUNzqA==",
+  "dgSpecHash": "pMRnnp30jgsgvvFmZmgQg4Gz1rQJ5/mJKDTb8D+HCpZNYAvMGsuwnH1AOVJ4CupoV8H0tWUw4uaVsx4VkRMZEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hussain\\Documents\\Github\\Photography\\Photography\\PhotographyConsole\\PhotographyConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.3\\microsoft.extensions.dependencyinjection.3.1.3.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Hussain\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Hussain\\.nuget\\packages\\restsharp\\106.11.2\\restsharp.106.11.2.nupkg.sha512"
   ],
