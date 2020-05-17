@@ -19,14 +19,12 @@ namespace OrderApi.Controllers
         private readonly IRepository<Order> _orderRepo;
         private readonly IConverter _converter;
         private readonly IMessagePublisher _messagePublisher;
-        private readonly IServiceGateway<ProductDTO> _serviceGatewayProduct;
 
-        public OrdersController(IRepository<Order> orderRepo, IMessagePublisher messagePublisher, IConverter converter, IServiceGateway<ProductDTO> serviceGatewayProduct)
+        public OrdersController(IRepository<Order> orderRepo, IMessagePublisher messagePublisher, IConverter converter)
         {
             _orderRepo = orderRepo;
             _messagePublisher = messagePublisher;
             _converter = converter;
-            _serviceGatewayProduct = serviceGatewayProduct;
         }
 
         // GET: api/Orders
@@ -74,17 +72,6 @@ namespace OrderApi.Controllers
                 if (orderDTO is null || orderDTO.ID > 0 || orderDTO.Products is null)
                 {
                     return BadRequest();
-                }
-
-                List<ProductDTO> products = await _serviceGatewayProduct.GetAll();
-                int[] allowedProductIds = products.Select(x => x.ID).ToArray();
-
-                foreach (var prod in orderDTO.Products)
-                {
-                    if (!allowedProductIds.Contains(prod.ProductID))
-                    {
-                        return BadRequest("Product chosen is not valid");
-                    }
                 }
 
                 Order orderToCreate = _converter.Convert<Order>(orderDTO);
